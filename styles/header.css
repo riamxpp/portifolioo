@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #3466f6;
+}
+
+.lista-header {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.lista-header a {
+  text-decoration: none;
+  color: #fff;
+}

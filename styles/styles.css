@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./apresentacao.css";
+@import "./sobre.css";
 
 body {
   margin: 0;
@@ -11,4 +12,13 @@ body {
 * {
   box-sizing: border-box;
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }

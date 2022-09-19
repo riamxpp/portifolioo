@@ -1,9 +1,11 @@
 #sobre {
   background-color: #fff;
-  height: 400px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .informacoes {
@@ -53,4 +55,51 @@
   font-size: 1.3rem;
   margin: 0;
   line-height: 0.9cm;
+}
+
+.perfil_skills {
+  width: 600px;
+  height: 510px;
+  display: flex;
+  gap: 4%;
+}
+
+.perfil_skills strong,
+.perfil_skills h2 {
+  color: #3466f6;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.perfil_skills span {
+  color: #888888;
+}
+
+.perfil_skills p {
+  color: #888888;
+  font-size: 1.2rem;
+}
+
+.perfil,
+.skills {
+  width: 48%;
+  height: auto;
+  padding: 2rem 0;
+  color: #888888;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil ul,
+.skills ul {
+  padding: 0;
+}
+
+.perfil ul li,
+.skills ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }

@@ -29,7 +29,7 @@
 
 .educacao {
   padding: 2rem 0;
-  width: 80%;
+  width: 890px;
   margin: 0 auto;
 }
 
@@ -64,8 +64,10 @@ strong {
 }
 
 .instituicao {
-  width: 45%;
+  width: 65%;
   margin-bottom: 1rem;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .instituicao h4 {

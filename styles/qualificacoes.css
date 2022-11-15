@@ -1,0 +1,89 @@
+.qualificacoes {
+  background-color: #ebebeb;
+  padding: 2rem 0;
+}
+
+.resumo h4 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.565;
+  color: #3466f6;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  height: 35px;
+  text-align: center;
+}
+
+.resumo h3 {
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.resumo p {
+  color: #888888;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.educacao {
+  padding: 2rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.educacao h3 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.565;
+  color: #3466f6;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  height: 35px;
+  text-align: center;
+}
+
+.educacao ul {
+  list-style: none;
+}
+
+.educacao h4,
+strong {
+  color: #333;
+}
+
+.educacao span {
+  color: #888888;
+}
+
+.educacao li {
+  display: flex;
+  color: #888888;
+}
+
+.instituicao {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+
+.instituicao h4 {
+  margin-bottom: 1rem;
+}
+
+.curso {
+  margin-bottom: 1rem;
+}
+.curso strong {
+  display: block;
+  margin-bottom: 1rem;
+}
+.curso span::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  display: block;
+  background-color: #88888849;
+  border-radius: 2px;
+}

@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./apresentacao.css";
 @import "./sobre.css";
+@import "./qualificacoes.css";
 
 body {
   margin: 0;

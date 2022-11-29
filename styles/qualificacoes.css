@@ -29,7 +29,7 @@
 
 .educacao {
   padding: 2rem 0;
-  width: 890px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -43,10 +43,16 @@
   text-shadow: 0 0 6px rgb(0 0 0 / 20%);
   height: 35px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .educacao ul {
   list-style: none;
+  position: relative;
+}
+
+.data-curso {
+  font-size: 0.8rem;
 }
 
 .educacao h4,
@@ -61,31 +67,55 @@ strong {
 .educacao li {
   display: flex;
   color: #888888;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.centro {
+  height: 100%;
+  width: 1px;
+  background-color: #33333338;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.centro div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  left: -17px;
+  background-image: url("../images/icons8-chapéu-de-formatura-30.png");
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .instituicao {
-  width: 65%;
-  margin-bottom: 1rem;
-  text-align: right;
-  margin-right: 10px;
+  width: 200px;
 }
 
-.instituicao h4 {
-  margin-bottom: 1rem;
+.curso-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 350px;
 }
 
-.curso {
-  margin-bottom: 1rem;
+.nome-curso {
+  margin-bottom: 20px;
 }
-.curso strong {
-  display: block;
-  margin-bottom: 1rem;
-}
-.curso span::before {
+
+.nome-curso::before {
   content: "";
-  width: 50px;
+  display: inline-block;
+  width: 100px;
   height: 4px;
-  display: block;
-  background-color: #88888849;
+  background-color: #33333338;
+  position: absolute;
   border-radius: 2px;
+  top: 25px;
 }

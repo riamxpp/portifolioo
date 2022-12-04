@@ -2,6 +2,7 @@
 @import "./apresentacao.css";
 @import "./sobre.css";
 @import "./qualificacoes.css";
+@import "./projetos.css";
 
 body {
   margin: 0;

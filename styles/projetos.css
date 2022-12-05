@@ -47,7 +47,7 @@
 .projetos-padrao a {
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
@@ -81,4 +81,42 @@
 .playstation {
   height: auto;
   position: relative;
+}
+
+.infos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333e0;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  animation: anime-left 0.5s ease;
+  transition: 0.3s;
+  display: none;
+}
+
+.infos h6 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.infos p {
+  max-width: 80%;
+  text-align: center;
+}
+
+@keyframes anime-left {
+  from {
+    opacity: 0;
+    transform: translateX(-700px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

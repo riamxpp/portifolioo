@@ -94,9 +94,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  animation: anime-left 0.5s ease;
-  transition: 0.3s;
-  display: none;
 }
 
 .infos h6 {
@@ -108,6 +105,18 @@
 .infos p {
   max-width: 80%;
   text-align: center;
+}
+
+.ativa-animacao {
+  animation: anime-left 0.5s ease;
+  transition: 0.3s;
+  display: flex;
+}
+
+.desativa-animacao {
+  animation: anime-left 0.5s ease;
+  transition: 0.3s;
+  display: none;
 }
 
 @keyframes anime-left {

@@ -1,4 +1,4 @@
-export default projetosApi = {
+const projetosApi = {
   chatApp: {
     nome: "Chat App",
     descricao: "Chat App é um projeto inspirado no Whatsapp.",
@@ -25,3 +25,5 @@ export default projetosApi = {
     link: "",
   },
 };
+
+export default projetosApi;

@@ -1,16 +1,21 @@
+import projetosApi from "../utils/projetosApi.js";
+
 export default class Projetos {
-  constructor(projetos, infoProjetos) {
+  constructor(projetos) {
     this.projetos = Array.from(document.querySelectorAll(projetos));
-    this.infoProjetos = infoProjetos;
   }
 
   showInfos(event) {
-    event.srcElement.children[0].style.display = "flex";
-    console.log(this.infoProjetos);
+    event.target.children[0].classList.remove("desativa-animacao");
+    event.target.children[0].classList.add("ativa-animacao");
+    // event.srcElement.children[0].style.display = "flex";
+    // console.log(projetosApi[event.srcElement.classList[0]]);
   }
 
   hiddenInfos(event) {
-    event.srcElement.children[0].style.display = "none";
+    // event.srcElement.children[0].style.display = "none";
+    event.target.children[0].classList.remove("ativa-animacao");
+    event.target.children[0].classList.add("desativa-animacao");
   }
 
   scaleProjeto() {
@@ -24,8 +29,6 @@ export default class Projetos {
   }
   init() {
     this.scaleProjeto();
-
-    console.log(this.projetos);
     return this;
   }
 }

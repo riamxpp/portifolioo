@@ -1,32 +1,37 @@
 import projetosApi from "../utils/projetosApi.js";
 
 export default class Projetos {
-  constructor(projetos) {
+  constructor(projetos, backgruondModal, fechaModalBotao) {
     this.projetos = Array.from(document.querySelectorAll(projetos));
+    this.backgroundModal = document.querySelector(backgruondModal);
+    this.botaoModal = document.querySelector(fechaModalBotao);
   }
 
-  showInfos(event) {
-    event.target.children[0].classList.remove("desativa-animacao");
-    event.target.children[0].classList.add("ativa-animacao");
-    // event.srcElement.children[0].style.display = "flex";
-    // console.log(projetosApi[event.srcElement.classList[0]]);
+  openModal() {
+    console.log(this.backgruondModal);
+    this.backgroundModal.classList.add("ativo");
+    // this.modal.addEventListener("click", () => {
+    //   this.fechaModal(this.modal);
+    // });
   }
 
-  hiddenInfos(event) {
-    // event.srcElement.children[0].style.display = "none";
-    event.target.children[0].classList.remove("ativa-animacao");
-    event.target.children[0].classList.add("desativa-animacao");
+  fechaModalBotao() {
+    this.botaoModal.classList.remove("ativo");
+  }
+
+  fechaModalFora() {
+    this.backgroundModal.classList.remove("ativo");
   }
 
   scaleProjeto() {
     this.projetos.forEach((item) => {
-      item.addEventListener("mouseenter", this.showInfos);
+      item.addEventListener("click", this.openModal);
+      // this.openModal(event, item);
     });
-
-    this.projetos.forEach((item) => {
-      item.addEventListener("mouseleave", this.hiddenInfos);
-    });
+    this.backgroundModal.addEventListener("click", this.fechaModalFora);
+    this.botaoModal.addEventListener("click", this.fechaModalBotao);
   }
+
   init() {
     this.scaleProjeto();
     return this;

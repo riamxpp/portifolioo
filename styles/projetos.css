@@ -30,7 +30,7 @@
 
 .projetos {
   width: 80%;
-  height: auto;
+  height: 1263px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -55,21 +55,21 @@
 
 .projetos-padrao {
   width: 50%;
-  height: auto;
+  height: 1040px;
 }
 
 .chat-app {
-  height: 266px;
+  height: 264px;
   position: relative;
 }
 
 .biografia {
-  height: 785px;
+  height: 778px;
   position: relative;
 }
 
 .dama {
-  height: 1050px;
+  height: 1040px;
   position: relative;
 }
 
@@ -94,6 +94,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
+  font-size: clamp(1em, 1em + 1vw, 1em);
 }
 
 .infos h6 {
@@ -107,16 +109,72 @@
   text-align: center;
 }
 
-.ativa-animacao {
-  animation: anime-left 0.5s ease;
-  transition: 0.3s;
+.background-modal {
+  width: 99vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+}
+
+.conteudo-modal {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  z-index: 1000;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #333;
+  animation: anime-left 0.3s forwards;
+}
+
+.modal {
+  align-items: center;
+  justify-content: center;
+}
+
+.background-modal.ativo {
   display: flex;
 }
 
-.desativa-animacao {
-  animation: anime-left 0.5s ease;
-  transition: 0.3s;
-  display: none;
+.modal h5,
+.modal p,
+.modal a {
+  color: #333;
+}
+
+.modal h5 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.modal p {
+  font-size: clamp(1em, 0.8em + 1vw, 0.9em);
+  text-align: center;
+  max-width: 95%;
+  word-wrap: break-word;
+}
+
+.fecha-modal {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #3466f6;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 @keyframes anime-left {

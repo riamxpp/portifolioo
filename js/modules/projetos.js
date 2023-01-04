@@ -1,39 +1,53 @@
 import projetosApi from "../utils/projetosApi.js";
 
 export default class Projetos {
-  constructor(projetos, backgruondModal, fechaModalBotao) {
+  constructor(modal, projetos, escondidos) {
     this.projetos = Array.from(document.querySelectorAll(projetos));
-    this.backgroundModal = document.querySelector(backgruondModal);
-    this.botaoModal = document.querySelector(fechaModalBotao);
+    this.teste = document.querySelector(modal);
+    this.escondidos = Array.from(document.querySelectorAll(escondidos));
   }
 
-  openModal() {
-    console.log(this.backgruondModal);
-    this.backgroundModal.classList.add("ativo");
-    // this.modal.addEventListener("click", () => {
-    //   this.fechaModal(this.modal);
-    // });
-  }
-
-  fechaModalBotao() {
-    this.botaoModal.classList.remove("ativo");
-  }
-
-  fechaModalFora() {
-    this.backgroundModal.classList.remove("ativo");
-  }
-
-  scaleProjeto() {
-    this.projetos.forEach((item) => {
-      item.addEventListener("click", this.openModal);
-      // this.openModal(event, item);
+  addEventos() {
+    ["touch", "click"].forEach((evento) => {
+      this.projetos.forEach((item) => {
+        item.addEventListener(evento, this.openModal);
+      });
     });
-    this.backgroundModal.addEventListener("click", this.fechaModalFora);
-    this.botaoModal.addEventListener("click", this.fechaModalBotao);
+    this.projetos.forEach((item) => {
+      item.addEventListener("mouseover", this.ativaInfo);
+    });
+    this.projetos.forEach((item) => {
+      item.addEventListener("mouseout", this.desativaInfo);
+    });
+    console.log(this.escondidos);
+  }
+
+  ativaInfo(event) {
+    console.log(this.escondidos);
+    // console.log(event.path[0].classList[0]);
+  }
+
+  desativaInfo() {
+    console.log("desativou");
+  }
+
+  openModal(event) {
+    event.preventDefault();
+    // console.log(projetosApi[event.path[0].classList[0]]);
+    // console.log(event.path[0].classList[0]);
+    // document.querySelector;
+    console.log(this.projetos);
+  }
+
+  bindCallBacks() {
+    this.openModal = this.openModal.bind(this);
+    this.ativaInfo = this.ativaInfo.bind(this);
+    this.desativaInfo = this.desativaInfo.bind(this);
   }
 
   init() {
-    this.scaleProjeto();
+    this.addEventos();
+    this.bindCallBacks();
     return this;
   }
 }

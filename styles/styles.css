@@ -3,6 +3,7 @@
 @import "./sobre.css";
 @import "./qualificacoes.css";
 @import "./projetos.css";
+@import "./informacoes-contato.css";
 
 body {
   margin: 0;

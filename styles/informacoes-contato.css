@@ -1,0 +1,39 @@
+.informacoes-contato {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  text-align: center;
+  background-color: #ebebeb;
+}
+
+.informacoes-contato article {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-localizacao {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+}
+
+.informacoes-contato h4 {
+  color: #333;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.informacoes-contato span {
+  color: #888888;
+}
+
+.localizacao-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.localizacao div img {
+  height: 33px;
+}

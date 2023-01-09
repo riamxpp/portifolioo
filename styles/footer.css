@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 1rem 17%;
+  background-color: #ebebeb;
+}
+
+.footer div {
+  width: 40%;
+  color: #888888;
+  height: auto;
+}
+
+.credito p {
+  color: #888888;
+}
+
+.credito a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.sociais-footer {
+  width: auto;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10%;
+  justify-content: flex-end;
+}
+
+.sociais-footer li {
+  width: 30px;
+}

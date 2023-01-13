@@ -31,3 +31,75 @@
   color: #3466f6;
   transition: 0.3s;
 }
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .header {
+    position: relative;
+  }
+
+  .header nav {
+    width: 90px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .lista-header {
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-start;
+    text-align: end;
+    margin-top: 4px;
+    margin-left: 20px;
+    display: none;
+    animation: anime-buttom 1s ease-in-out;
+  }
+
+  .lista-header.ativo {
+    display: flex;
+    animation: anime-buttom 0.5s ease-in-out;
+  }
+
+  .mobile-button {
+    height: 35px;
+    width: 35px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 44px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .mobile-button:hover {
+    border-radius: 50%;
+    background-color: #333333ab;
+  }
+
+  .mobile-button::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 6px #fff, 0 -6px #fff;
+  }
+}
+
+@keyframes anime-buttom {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

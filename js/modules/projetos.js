@@ -19,7 +19,6 @@ export default class Projetos {
     this.projetos.forEach((item) => {
       item.addEventListener("mouseout", this.desativaInfo);
     });
-    console.log(this.escondidos);
   }
 
   ativaInfo(event) {

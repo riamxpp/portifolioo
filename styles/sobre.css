@@ -59,7 +59,7 @@
 
 .perfil_skills {
   width: 600px;
-  height: 510px;
+  height: 610px;
   display: flex;
   gap: 4%;
 }
@@ -71,9 +71,9 @@
   letter-spacing: 0.1rem;
 }
 
-.perfil_skills span {
+/* .perfil_skills span {
   color: #888888;
-}
+} */
 
 .perfil_skills p {
   color: #888888;
@@ -102,4 +102,55 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.oitenta {
+  right: 45px;
+  width: 80%;
+}
+
+.setenta {
+  right: 73px;
+  width: 70%;
+}
+
+.cinquenta {
+  right: 130px;
+  width: 50%;
+}
+
+.progresso_total {
+  width: 100%;
+  height: 5px;
+  background-color: #3333338c;
+  position: relative;
+}
+
+.porcentagem_progesso {
+  width: auto;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #3466f6;
+  position: absolute;
+  top: -27px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.2rem;
+  color: #fff;
+}
+
+.porcentagem_progesso::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -5px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #3466f6;
+  content: "";
+}
+
+.barra_progresso {
+  height: 5px;
+  background-color: #3466f6;
 }

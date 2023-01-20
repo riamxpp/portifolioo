@@ -110,17 +110,17 @@
 }
 
 .oitenta {
-  right: 45px;
+  right: 16.5%;
   width: 80%;
 }
 
 .setenta {
-  right: 73px;
+  right: 26.5%;
   width: 70%;
 }
 
 .cinquenta {
-  right: 130px;
+  right: 46.5%;
   width: 50%;
 }
 
@@ -158,4 +158,48 @@
 .barra_progresso {
   height: 5px;
   background-color: #3466f6;
+}
+
+@media (max-width: 700px) {
+  .informacoes {
+    width: 90%;
+  }
+  .perfil_skills {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .perfil {
+    height: auto;
+  }
+
+  .skills {
+    height: 570px;
+  }
+
+  .oitenta {
+    right: 18%;
+  }
+
+  .setenta {
+    right: 28%;
+  }
+
+  .cinquenta {
+    right: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .informacoes_foto {
+    width: 60px;
+  }
+  .informacoes_foto img {
+    height: 70px;
+  }
+  .informacoes_sobre-mim {
+    flex-direction: column;
+    align-items: center;
+  }
 }

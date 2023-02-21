@@ -119,3 +119,30 @@ strong {
   border-radius: 2px;
   top: 25px;
 }
+
+@media (max-width: 700px) {
+  .educaco {
+    width: 90%;
+  }
+
+  .item-educacao {
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  .centro {
+    left: 0px;
+  }
+
+  .curso-container span {
+    word-break: break-all;
+  }
+
+  .instituicao {
+    width: 100%;
+  }
+
+  .curso-container {
+    width: 100%;
+  }
+}

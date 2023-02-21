@@ -37,3 +37,10 @@
 .localizacao div img {
   height: 33px;
 }
+
+@media (max-width: 600px) {
+  .informacoes-contato article {
+    flex-direction: column;
+    gap: 50px;
+  }
+}

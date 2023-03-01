@@ -2,12 +2,9 @@
 import Projetos from "./modules/projetos.js";
 import MobileButton from "./modules/mobileButton.js";
 
-const projetos = new Projetos(".modal", ".projetos", ".escondido").init();
+const projetos = new Projetos( ".projetos",".background-modal", '.container-foto-modal', '.conteudo-modal', '.fecha-modal', '.fotos_tencologias').init();
 const mobileButton = new MobileButton(
   ".lista-header",
   ".mobile-button",
-  ".lista-header li"
+  ".lista-header li",
 ).init();
-// console.log("olá");
-// const teste = document.querySelector(".centro");
-// console.log(teste);

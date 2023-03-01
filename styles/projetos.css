@@ -70,7 +70,7 @@
   height: 80%;
 }
 
-.chat-app {
+.chatApp {
   height: 30%;
   position: relative;
   background-image: url("../images/projects/chat-app.webp");
@@ -151,18 +151,54 @@
   z-index: 1;
 }
 
+.container-foto-modal {
+  width: 40%;
+  height: 100%;
+  /* overflow: hidden; */
+  background-image: url('');
+  background-size: cover;
+  /* ../images/projects/biografia.png */
+  background-position: 50% 0%;
+}
+
+.container-conteudo-modal p {
+  width: 400px;
+  margin: 20px auto 0 auto;
+  font-size: 1.5rem;
+}
+
+.container-conteudo-modal {
+  width: 60%;
+}
+
 .conteudo-modal {
-  width: 250px;
-  height: 250px;
+  width: 70%;
+  height: 500px;
   position: relative;
   z-index: 1000;
   padding: 1rem;
   border-radius: 4px;
   display: flex;
-  flex-direction: column;
   background-color: #fff;
   color: #333;
   animation: anime-left 0.3s forwards;
+  display: flex;
+  gap: 1rem;
+}
+
+.fotos_tencologias {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+} 
+
+.fotos_tencologias li {
+  width: 50px;
+  height: 50px;
+  background-size: 90%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .modal {
@@ -194,16 +230,15 @@
 
 .fecha-modal {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: #3466f6;
-  color: #fff;
+  top: 5px;
+  right: 5px;
+  color: #ada3a3;
+  background-color: transparent;
   border: none;
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 @keyframes anime-left {
@@ -217,12 +252,18 @@
   }
 }
 
-@media (max-width: 1025px) {
-}
-
 @media (max-width: 1000px) {
   .projetos {
     height: 900px;
+  }
+  .conteudo-modal {
+    width: 700px;
+  }
+  .container-foto-modal {
+    width: 300px;
+  }
+  .container-conteudo-modal {
+    width: 400px;
   }
 }
 
